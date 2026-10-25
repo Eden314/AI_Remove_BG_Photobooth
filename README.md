@@ -11,7 +11,7 @@ Photobooth BG Remover dùng BiRefNet General để tách nền ảnh. Repository
    .\INSTALL.bat run
    ```
 
-3. Lần đầu, `INSTALL.bat` tạo môi trường Python 3.12 riêng và cài thư viện. Nếu cần, script cài Python qua `winget`. Nếu không có `winget` cài Python thủ công bằng link:
+3. Lần đầu, `INSTALL.bat` tạo môi trường Python 3.12 riêng và cài thư viện. Nếu cần script sẽ cài Python qua `winget`. Nếu không có `winget` hãy cài Python thủ công bằng link:
    https://www.python.org/ftp/python/3.12.9/python-3.12.9-amd64.exe
 Chương trình cần Internet để cài đặt và tải model BiRefNet (khoảng 1 GB) ở lần chạy đầu. 
 4. Giữ cửa sổ terminal mở. Thêm ảnh mới vào `Input`; chương trình chỉ xử lý ảnh được thêm sau khi khởi động. Ảnh PNG đã tách nền và trim viền trong suốt sẽ được lưu vào `Output`.
