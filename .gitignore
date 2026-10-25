@@ -1,0 +1,15 @@
+/Image/
+/CamVot/
+/Input/
+/Output/
+/output_no_bg/
+__pycache__/
+*.py[cod]
+/.portable-build-env/
+/.photobooth-env/
+/.build_models/
+/build/
+/dist/
+/*.spec
+/.perf_*/
+/onnxruntime_profile__*.json
