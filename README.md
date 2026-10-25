@@ -1,4 +1,4 @@
-# Photobooth — chạy từ source
+# Photobooth
 
 Photobooth dùng BiRefNet General để tách nền ảnh. Repository chỉ chứa source và công cụ setup/build; môi trường Python, model, cache, ảnh đầu vào/đầu ra và gói `dist` được tạo riêng trên từng máy.
 
@@ -11,7 +11,8 @@ Photobooth dùng BiRefNet General để tách nền ảnh. Repository chỉ ch�
    .\INSTALL.bat run
    ```
 
-3. Lần đầu, `INSTALL.bat` tạo môi trường Python 3.12 riêng và cài thư viện. Nếu cần, script cài Python qua `winget`. Chương trình cần Internet để cài đặt và tải model BiRefNet (khoảng 1 GB) ở lần chạy đầu.
+3. Lần đầu, `INSTALL.bat` tạo môi trường Python 3.12 riêng và cài thư viện. Nếu cần, script cài Python qua `winget`. Chương trình cần Internet để cài đặt và tải model BiRefNet (khoảng 1 GB) ở lần chạy đầu. Nếu không có `winget` cài Python thủ công bằng link:
+   https://www.python.org/ftp/python/3.12.9/python-3.12.9-amd64.exe
 4. Giữ cửa sổ terminal mở. Thêm ảnh mới vào `Input`; chương trình chỉ xử lý ảnh được thêm sau khi khởi động. Ảnh PNG đã tách nền và trim viền trong suốt sẽ được lưu vào `Output`.
 5. Worker chờ ảnh ổn định **1 giây**, xử lý ảnh tuần tự theo lô và giữ model mở trong phiên. Nhấn `Ctrl+C` để dừng.
 
@@ -37,5 +38,3 @@ Gói hoàn chỉnh được tạo trong `dist\Photobooth`. Để mang gói sang 
 - `INSTALL.bat`: setup môi trường, chạy source hoặc build gói.
 - `build_photobooth.py`, `photobooth_launcher.py`: tạo gói portable và launcher.
 - `.gitignore`: loại môi trường, model cache, ảnh, build và `dist` khỏi Git.
-
-`Input`, `Output`, model ONNX, môi trường ảo và `dist` không cần clone; chương trình tạo các thư mục đầu vào/đầu ra và tải hoặc build phần còn lại khi cần.
