@@ -1,6 +1,6 @@
-# Photobooth
+# Photobooth BG Remover
 
-Photobooth dùng BiRefNet General để tách nền ảnh. Repository chỉ chứa source và công cụ setup/build; môi trường Python, model, cache, ảnh đầu vào/đầu ra và gói `dist` được tạo riêng trên từng máy.
+Photobooth BG Remover dùng BiRefNet General để tách nền ảnh. Repository chỉ chứa source và công cụ setup/build; môi trường Python, model, cache, ảnh đầu vào/đầu ra và gói `dist` được tạo riêng trên từng máy.
 
 ## Chạy source sau khi clone
 
